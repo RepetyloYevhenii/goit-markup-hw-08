@@ -1,0 +1,131 @@
+.section.advantage {
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-bottom: 1px solid #ececec;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.advantage {
+  .container {
+    @extend %container;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
+  .list {
+    @extend %list;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+  .item {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 8 * 15px) / 4);
+    }
+  }
+
+  .background-icon {
+    @media screen and (max-width: 767px) {
+      @include bsize(100%, 120px);
+    }
+
+    @media screen and (min-width: 768px) {
+      @include bsize(354px, 120px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include bsize(270px, 120px);
+    }
+
+    @include flex-mix(flex, center, center);
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+  }
+}
+
+.antenna-icon {
+  @include bsize(65px, 70px);
+  align-items: center;
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  @include fontz(700, 36px, 1.16, 00.03em);
+  color: $title-text-color;
+}
+
+.advantage-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  @include fontz(700, 14px, 1.14, 00.03em);
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.advantage {
+  .text {
+    margin-top: 0;
+    padding: 0;
+    @include fontz(400, 14px, 1.71, 00.03em);
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+}

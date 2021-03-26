@@ -1,0 +1,132 @@
+.section.team {
+  background-color: $color-bg-child;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.team {
+  .container {
+    @extend %container;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
+
+  .link {
+    @extend %link;
+    color: $color-social-links;
+  }
+
+  .list {
+    @extend %list;
+    &.cards {
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .img-team {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .item.cards {
+    padding-bottom: 24px;
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 8 * 15px) / 4);
+      margin: 15px;
+    }
+
+    background-color: $primary-white-color;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+  }
+
+  .team-title {
+    margin-top: 0;
+
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    text-align: center;
+  }
+
+  .team-position {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $primery-text-color;
+  }
+
+  //соцсети
+
+  .list.icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .item.social {
+    margin-right: 10px;
+  }
+
+  .item.social:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+
+  .social-icon {
+    fill: currentColor;
+  }
+}
