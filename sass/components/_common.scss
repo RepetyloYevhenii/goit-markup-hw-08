@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: $font-body;
-  color: $primery-text-color;
+  // color: $primery-text-color;
 }
 
 // body.modal-open {
@@ -112,6 +112,7 @@ img {
       .icon-cross {
         display: block;
       }
+
       .icon-menu {
         display: none;
       }
@@ -163,12 +164,14 @@ img {
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: 85px;
+    // margin-left: 85px;
   }
 }
+
 .site-nav {
   @media screen and (min-width: 768px) {
     display: flex;
+
     .item:not(:last-child) {
       margin-right: 50px;
     }
@@ -208,7 +211,7 @@ img {
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       left: 0;
       bottom: 0;
       display: block;
@@ -362,6 +365,7 @@ img {
     &.link {
       display: inline-block;
       margin-bottom: 10px;
+      font-family: "Raleway", sans-serif;
     }
     @media screen and (max-width: 1199px) {
       @include fontz(700, 24px, 1.16, 0.03em);
@@ -496,10 +500,10 @@ img {
     border-color: transparent;
 
     &::after {
-      content: '';
+      content: "";
       @include bsize(24px, 24px);
       margin-left: 10px;
-      background-image: url('../img/icon/icon-send.svg');
+      background-image: url("../img/icon/icon-send.svg");
       background-size: contain;
     }
   }
@@ -745,14 +749,14 @@ img {
   margin: 0;
   margin-right: 5px;
 
-  background-image: url('../img/icon/nocheck.svg');
+  background-image: url("../img/icon/nocheck.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .check-input:checked + .checkbox,
 .check-input:checked:focus + .checkbox {
-  background-image: url('../img/icon/check.svg');
+  background-image: url("../img/icon/check.svg");
   background-size: contain;
   background-color: $accent-text-color;
   border-radius: 4px;

@@ -277,7 +277,6 @@ summary {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  color: #757575;
 }
 
 img {
@@ -455,7 +454,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 85px;
   }
 }
 
@@ -523,7 +521,7 @@ img {
 
 .site-nav .link::after {
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   bottom: 0;
   display: block;
@@ -729,6 +727,7 @@ img {
 .page-footer .logo-foot.link {
   display: inline-block;
   margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
 }
 
 @media screen and (max-width: 1199px) {
@@ -909,7 +908,7 @@ img {
 }
 
 .button.primary::after {
-  content: '';
+  content: "";
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -1276,42 +1275,42 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../img/hero/hero-mob.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/hero/hero-mob.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/hero-mob.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/hero-mob.jpg");
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
   .overley {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../img/hero/hero-mob@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/hero/hero-mob@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/hero-mob@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/hero-mob@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .overley {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../img/hero/hero-tablet.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/hero/hero-tablet.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/hero-tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/hero-tablet.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .overley {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../img/hero/hero-tablet@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/hero/hero-tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/hero-tablet@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/hero-tablet@2x.jpg");
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 960px) {
   .overley {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../img/hero/hero-desctop.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/hero/hero-desctop.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/hero-desctop.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/hero-desctop.jpg");
   }
 }
 
-@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 960px) and (min-resolution: 2dppx) {
   .overley {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../img/hero/hero-desctop@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/hero/hero-desctop@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/hero-desctop@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/hero-desctop@2x.jpg");
   }
 }
 
@@ -1369,14 +1368,6 @@ img {
   .section.advantage {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section.advantage {
-    border-bottom: 1px solid #ececec;
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
@@ -1591,7 +1582,7 @@ img {
   bottom: 0;
   margin: 0;
   padding: 27px;
-  background: rgba(47, 48, 58, 0.8);
+  background: rgba(47, 48, 58, 0.4);
   border-radius: 0px 0px 4px 4px;
   font-weight: 700;
   font-size: 14px;
@@ -1616,7 +1607,6 @@ img {
 @media screen and (min-width: 1200px) {
   .section.team {
     padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
@@ -1930,7 +1920,7 @@ img {
   }
 }
 
-@media screen and (min-width: 392px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .projects .list.container-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1952,13 +1942,6 @@ img {
   }
   .projects .list.container-btn li:nth-child(5n) {
     margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 391px) {
-  .projects .list.container-btn li {
-    margin-right: 8px;
-    margin-bottom: 15px;
   }
 }
 
@@ -1999,12 +1982,6 @@ img {
   }
   .projects .list.container-btn li:nth-child(5n) {
     margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .list.cards {
-    padding-bottom: 60px;
   }
 }
 

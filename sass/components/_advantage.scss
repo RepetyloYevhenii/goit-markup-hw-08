@@ -10,9 +10,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    border-bottom: 1px solid #ececec;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
   }
 }
 
@@ -99,7 +98,7 @@
   margin-bottom: 50px;
   text-align: center;
   @include fontz(700, 36px, 1.16, 00.03em);
-  color: $title-text-color;
+  color: #212121;
 }
 
 .advantage-title {
