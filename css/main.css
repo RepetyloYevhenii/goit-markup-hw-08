@@ -411,8 +411,8 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vh;
-    height: 796px;
+    width: 100vw;
+    height: 100vh;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
@@ -429,16 +429,25 @@ img {
     z-index: 1;
   }
   .menu-container.is-open {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-transform: translate(0);
             transform: translate(0);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 .menu-container .menu-button--close {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 21px;
+  right: 21px;
   border: none;
   background-color: transparent;
 }
@@ -504,11 +513,11 @@ img {
 @media screen and (max-width: 767px) {
   .site-nav .link {
     display: inline-block;
-    padding-top: 40px;
-    padding-bottom: 12px;
+    padding-top: 0;
+    padding-bottom: 35px;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 1.16;
+    font-size: 40px;
+    line-height: 1.175;
     letter-spacing: 0.02em;
   }
 }
@@ -657,6 +666,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -671,15 +682,25 @@ img {
     display: -ms-flexbox;
     display: flex;
   }
+  .social-networks .social-networks__list:not(:last-child)::after {
+    content: "";
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+  }
   .social-networks .social-networks__list:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .social-networks .social-networks__link {
     text-decoration: none;
     font-family: Roboto;
     font-weight: 500;
     font-size: 18px;
-    line-height: 1.22px;
+    line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
   }
