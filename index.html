@@ -21,7 +21,29 @@
         >
         <button
           type="button"
-          class="menu-button"
+          class="menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-menu" href="./img/sprite.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div
+        class="menu-container js-menu-container"
+        id="menu-container"
+        data-menu
+      >
+        <button
+          type="button"
+          class="menu-button--close js-close-menu"
           aria-expanded="false"
           aria-controls="menu-container"
           data-menu-button
@@ -35,12 +57,8 @@
               class="icon-cross"
               href="./img/sprite.svg#icon-close_40px"
             ></use>
-            <use class="icon-menu" href="./img/sprite.svg#icon-menu_40px"></use>
           </svg>
         </button>
-      </div>
-
-      <div class="menu-container" id="menu-container" data-menu>
         <nav class="main-nav">
           <!-- Контейнер с навигацией -->
           <ul class="site-nav list">
@@ -54,17 +72,9 @@
           </ul>
         </nav>
 
-        <!-- Контейнер почта и телефон -->
+        <!-- Контейнер почта телефон соц. сети-->
 
         <ul class="cont-nav list">
-          <li class="item mail">
-            <a href="mailto" class="mail link">
-              <svg class="mail-icon">
-                <use href="./img/sprite.svg#icon-mailicon"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
           <li class="item phone">
             <a href="tel:380961111111" class="phone link">
               <svg class="phone-icon">
@@ -73,6 +83,28 @@
               +38 096 111 11 11</a
             >
           </li>
+          <li class="item mail">
+            <a href="mailto" class="mail link">
+              <svg class="mail-icon">
+                <use href="./img/sprite.svg#icon-mailicon"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <ul class="social-networks">
+            <li class="social-networks__list">
+              <a href="http://" class="social-networks__link">Instagram</a>
+            </li>
+            <li class="social-networks__list">
+              <a href="http://" class="social-networks__link">Twitter</a>
+            </li>
+            <li class="social-networks__list">
+              <a href="http://" class="social-networks__link">Facebook</a>
+            </li>
+            <li class="social-networks__list">
+              <a href="http://" class="social-networks__link">LinkedIn</a>
+            </li>
+          </ul>
         </ul>
       </div>
     </header>
