@@ -554,7 +554,8 @@ img {
   background-color: $primary-white-color;
 
   @media screen and (max-width: 480px) {
-    width: 450px;
+    // width: 450px;
+    width: 97%;
     min-height: 609px;
   }
 
@@ -598,7 +599,11 @@ img {
 .form {
   @media screen and (max-width: 1199px) {
     width: 450px;
-    height: 609px;
+    // height: 609px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    // height: 609px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -744,6 +749,7 @@ img {
 
 /* Оформляем чекбокс */
 .checkbox {
+  flex-shrink: 0;
   width: 15px;
   height: 16px;
   margin: 0;
@@ -763,6 +769,8 @@ img {
 }
 
 .text.consent {
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
   left: 36px;

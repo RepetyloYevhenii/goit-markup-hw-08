@@ -1,4 +1,6 @@
 .projects {
+  padding-top: 60px;
+  padding-bottom: 60px;
   border-top: 1px solid #ececec;
 
   @media screen and (max-width: 767px) {
@@ -28,17 +30,18 @@
       &.container-btn {
         display: flex;
         flex-wrap: wrap;
-        padding-top: 60px;
+        // padding-top: 60px;
         margin-bottom: 40px;
         text-align: center;
+
         li {
           margin-right: 8px;
           &:nth-child(-n + 3) {
             margin-bottom: 15px;
           }
-          &:nth-last-child(3) {
-            margin-right: 0;
-          }
+          // &:nth-last-child(3) {
+          //   margin-right: 0;
+          // }
           &:nth-child(5n) {
             margin-right: 0;
           }
@@ -135,6 +138,7 @@
 
   border: 1px solid #eeeeee;
   border-radius: 5px;
+
   &:hover .text-projects {
     opacity: 1;
     transform: translateY(0);
@@ -204,6 +208,16 @@
   @media screen and (min-width: 768px) {
     padding: 49px 24px;
     @include bsize(354px, 294px);
+  }
+
+  @media screen and (max-width: 479px) {
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
   }
 
   @media screen and (min-width: 1200px) {
