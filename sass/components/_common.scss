@@ -124,50 +124,13 @@ img {
 }
 
 .menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-left: 81px;
   @media screen and (max-width: 767px) {
     display: none;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 40px;
-    padding-right: 83px;
-
-    background-color: $primary-white-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
-      0px 4px 8px rgba(0, 0, 0, 0.04);
-
-    // text-align: center;
-    transform: translate(100%);
-    transition: transform 250ms;
-    z-index: 1;
-
-    &.is-open {
-      display: flex;
-      transform: translate(0);
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  }
-
-  .menu-button--close {
-    position: absolute;
-    top: 21px;
-    right: 21px;
-    border: none;
-    background-color: transparent;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-grow: 1;
-    margin-left: 81px;
   }
 }
 
@@ -205,13 +168,6 @@ img {
     color: $title-text-color;
     @include tranzition(color);
 
-    @media screen and (max-width: 767px) {
-      display: inline-block;
-      padding-top: 0;
-      padding-bottom: 35px;
-      @include fontz(500, 40px, 1.175, 0.02em);
-    }
-
     @media screen and (min-width: 768px) {
       display: block;
       padding-top: 32px;
@@ -247,6 +203,10 @@ img {
       @include tranzition(color);
     }
   }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .cont-nav {
@@ -254,9 +214,11 @@ img {
     margin-left: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     > .item.phone {
-      margin-left: 30px;
+      margin-right: 30px;
+      display: flex;
     }
   }
 
@@ -267,16 +229,15 @@ img {
       }
     }
   }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .link {
   color: $primery-text-color;
   @include tranzition(color);
-
-  @media screen and (max-width: 767px) {
-    display: inline-block;
-    @include fontz(500, 18px, 1.16, 0.02em);
-  }
 
   @media screen and (min-width: 768px) {
     @include fontz(500, 12px, 1.16, 0.02em);

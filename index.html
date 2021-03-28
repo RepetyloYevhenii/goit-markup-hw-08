@@ -21,10 +21,10 @@
         >
         <button
           type="button"
-          class="menu-button js-open-menu"
+          class="menu-button"
           aria-expanded="false"
           aria-controls="menu-container"
-          data-menu-button
+          data-mobile-open
         >
           <svg
             width="40"
@@ -41,24 +41,6 @@
         id="menu-container"
         data-menu
       >
-        <button
-          type="button"
-          class="menu-button--close js-close-men"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use
-              class="icon-cross"
-              href="./img/sprite.svg#icon-close_40px"
-            ></use>
-          </svg>
-        </button>
         <nav class="main-nav">
           <!-- Контейнер с навигацией -->
           <ul class="site-nav list">
@@ -90,20 +72,6 @@
               </svg>
               info@devstudio.com</a
             >
-          </li>
-        </ul>
-        <ul class="social-networks">
-          <li class="social-networks__list">
-            <a href="http://" class="social-networks__link">Instagram</a>
-          </li>
-          <li class="social-networks__list">
-            <a href="http://" class="social-networks__link">Twitter</a>
-          </li>
-          <li class="social-networks__list">
-            <a href="http://" class="social-networks__link">Facebook</a>
-          </li>
-          <li class="social-networks__list">
-            <a href="http://" class="social-networks__link">LinkedIn</a>
           </li>
         </ul>
       </div>
@@ -481,9 +449,7 @@
       <!-- Постоянные клиенты -->
       <section class="section customer">
         <div class="container">
-          <h2>
-            Постоянные клиенты
-          </h2>
+          <h2>Постоянные клиенты</h2>
           <ul class="list">
             <li class="item">
               <a href="" class="link">
@@ -688,7 +654,77 @@
       </div>
     </footer>
 
+    <div class="mobile-menu" data-mobile>
+      <button type="button" class="mobile-menu__button" data-mobile-close>
+        <svg class="mobile-menu__icon" width="19px" height="19px">
+          <!-- <use href="./images/icons.svg#close"></use> -->
+          <use
+            class="icon-menu-close"
+            href="./img/sprite.svg#icon-close_40px"
+          ></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a
+              href="./index.html"
+              class="mobile-nav__link mobile-nav__link--current"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#" class="mobile-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a
+            href="tel:+380961111111"
+            class="mobile-contacts__link mobile-contacts__link--tel"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts__item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="mobile-contacts__link mobile-contacts__link--email"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social">
+        <li class="mobile-social__item">
+          <a href="https://instagram.com/" class="mobile-social__link"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-social__item">
+          <a href="https://twitter.com/" class="mobile-social__link">Twitter</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="https://facebook.com/" class="mobile-social__link"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-social__item">
+          <a href="https://linkedin.com/" class="mobile-social__link"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+
     <!-- JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/form.js"></script>
     <script src="./js/menu.js"></script>
   </body>
